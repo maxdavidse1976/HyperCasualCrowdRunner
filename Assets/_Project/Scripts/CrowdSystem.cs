@@ -32,4 +32,9 @@ public class CrowdSystem : MonoBehaviour
 
         return new Vector3(x, 0, z);
     }
+
+    public float GetCrowdRadius()
+    {
+        return _radius * Mathf.Sqrt(_runnersParent.childCount);
+    }
 }
